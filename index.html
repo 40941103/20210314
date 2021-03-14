@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>旅遊調查表</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+
+<body style="background-color:#e7f6fa;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">你好喔!!</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">問卷 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.lookit.tw/travel/28675">2020全球十大旅遊景點</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">往年台灣人最愛旅遊的國家</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="https://www.wealth.com.tw/home/articles/22364">2019年</a>
+                        <a class="dropdown-item" href="https://travel.setn.com/News/479817">2018年</a>
+                        <a class="dropdown-item" href="https://news.ltn.com.tw/news/life/breakingnews/2302561">2017年</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div style="background-color:#6cd8f7;">
+        <div class="container">
+            <h1 class="display-3">最愛旅遊的國家調查表</h1>
+            <p class="lead">2021年調查</p>
+            <hr class="my-2">
+            <p></p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="https://zh.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E6%97%85%E6%B8%B8%E6%8E%92%E5%90%8D" role="button">世界旅遊排名</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="m-5">
+        <!-- style="margin: 30px;" -->
+        <form action="check.php" method="post">
+            <div class="form-group">
+                <label for="e-mail">e-mail:</label>
+                <input type="text" name="e-mail" id="e-mail" class="form-control" placeholder="請輸入e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="address">地址:</label>
+                <input type="text" name="address" id="address" class="form-control" placeholder="請輸入地址">
+            </div>
+
+            <div class="form-group">
+                <label for="date">生日:</label>
+                <input type="date" name="date" id="date" class="form-control" placeholder="請輸入生日">
+            </div>
+
+            <label>性別:</label>
+            <div class="form-check">
+                <label class="form-check-label ">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="m" checked>
+                    男性
+                <label class="form-check-label ml-5">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="w">
+                    女性
+                <label class="form-check-label ml-5">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="w">
+                    不透漏
+                </label>
+            </div>
+            <br> </br>
+
+            <table class="table table-striped table-bordered table-hover text-center">
+                <thead class="table-info ">
+                    <tr>
+                        <th>編號</th>
+                        <th>國家</th>
+                        <th>特色</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>南韓(大韓民國)</td>
+                        <td>男的帥，女的美，KPOP瘋迷全世界，許多泡菜...等</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>沙烏地阿拉伯王國</td>
+                        <td>君主專制，石油很多，GDP高，伊斯蘭教遜尼派...等</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>冰島</td>
+                        <td>面積不大，人口密度很小，9月～4月有極光，夏天會出現永晝...等</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">4</td>
+                        <td>梵蒂岡城國</td>
+                        <td>世界領土面積最小，天主教會最高領袖教宗駐地，義大利語最為常用...等</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="text-center ml-4">
+                <img src="14.jpg" width="300"height="300">
+                <img src="15.png" width="300"height="300">
+                <img src="16.png" width="300"height="300">
+                <img src="17.png" width="300"height="300">
+            </div>   
+
+            <br><label>選擇喜歡的國家(可複選):</label></br>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 編號1
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 編號2
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 編號3
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 編號4
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 其他
+                </label>
+                <div class="form-group">
+                    <label for=""></label>
+                    <textarea class="form-control ml-1" name="msg" id="msg" rows="1"></textarea>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="">問卷完成想要的小禮物:</label>
+                <select class="form-control" name="degree" id="">
+                    <option>桌曆</option>
+                    <option>帆布袋</option>
+                    <option>胸針</option>
+                    <option>杯墊</option>
+                    <option>馬克杯</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="color">問卷完成想要小禮物的顏色:</label>
+                <input type="color" name="color" id="color" class="form-control" placeholder="請輸入顏色">
+            </div>
+
+            <button type="button" class="btn btn-primary">送出</button>
+        </form>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js
+"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
